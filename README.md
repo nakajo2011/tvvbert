@@ -20,8 +20,3 @@ see 'bert_pretraining.py' for more details.
 python3 bert_cls.py cls_config.json
 
 see 'bert_cls.py' for more details.
-
-### Author ###
-
-* nakajo@chaintope.com
-* kamiya@haw.co.jp
