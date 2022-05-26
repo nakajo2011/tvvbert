@@ -1,0 +1,20 @@
+{
+  "train_dir":"./training_dataset/classify_data/",
+  "model_dir":"./pretraining/5_5M8epoch/models",
+  "output_dir":"./classify20220525/5_58epoch_freezed//",
+  "num_proc":2,
+  "per_device_train_batch_size":2,
+  "per_device_eval_batch_size":2,
+  "max_seq_length":512,
+  "do_train":true,
+  "eval_steps":500,
+  "evaluation_strategy":"steps",
+  "train_data_max_per_label":10000,
+  "num_train_epochs":2,
+  "logging_strategy":"steps",
+  "logging_steps":500,
+  "load_best_model_at_end": true,
+  "randomize_data": false,
+  "do_train": true,
+  "do_predict": false
+}

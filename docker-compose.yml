@@ -1,0 +1,8 @@
+version: "3"
+services:
+  anaconda:
+    build: .
+    image: condatorch
+    tty: true
+    volumes:
+      - ./:/conda/

@@ -1,0 +1,14 @@
+image: python:3.8
+
+pipelines:
+  custom:
+    lint:
+      - step: &step-lint
+          caches:
+            - pip
+          script:
+            - pip install flake8==4.0.1
+            - flake8 *.py
+  pull-requests:
+    '**':
+      - step: *step-lint

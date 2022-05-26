@@ -1,0 +1,20 @@
+{
+  "train_file":"/data/training_dataset/sentence.txt",
+  "vocab_file":"/data/training_dataset/vocab.txt",
+  "output_dir":"/data/trained_models/pretraining/training20220328/",
+  "num_attention_heads":8,
+  "num_bert_layers":8,
+  "hidden_size":256,
+  "per_device_train_batch_size":16,
+  "per_device_eval_batch_size":16,
+  "num_train_epochs":8,
+  "save_total_limit":5,
+  "num_proc":8,
+  "load_best_model_at_end": true,
+  "evaluation_strategy":"steps",
+  "eval_steps":500,
+  "logging_strategy":"steps",
+  "logging_steps":500,
+  "eval_percentage":3,
+  "log_level":"info"
+}
